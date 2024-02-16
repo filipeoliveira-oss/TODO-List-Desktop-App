@@ -15,15 +15,23 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "dialog": {
+        "all": true, 
+        "ask": true, 
+        "confirm": true, 
+        "message": true, 
+        "open": true, 
+        "save": true 
       }
     },
     "windows": [
       {
         "fullscreen": false,
-        "resizable": true,
-        "title": "todo-list-desktop-app",
+        "resizable": false,
+        "title": "TODO List",
         "width": 800,
-        "height": 600
+        "height": 900
       }
     ],
     "security": {

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './Tasks.css'
 import TaskContainer from '../TaskContainer/TasksContainer'
 
@@ -7,20 +6,20 @@ interface taskInterface{
     description: string,
     deadline: Date,
     priority:number,
-    complete: boolean
-}
+    complete: boolean,
+    id:number
+  }
+  
+  interface tasksInterface extends Array<taskInterface>{}
 
-interface tasksInterface extends Array<taskInterface>{}
 
-export default function Tasks(){
-
-    const [ tasks, setTasks ] = useState([{title: 'title', deadline:new Date(), description:'description', priority: 1}] as tasksInterface)
+export default function Tasks(props: {tasks: tasksInterface, setTasks: Function}){
 
     return(
         <div className='tasksContainer'>
-            {tasks.map((task: taskInterface) =>{
+            {props.tasks.map((task: taskInterface) =>{
                 return(
-                    <TaskContainer priority={task.priority} title={task.title} description={task.description} deadline={task.deadline} complete={task.complete}/>
+                    <TaskContainer task={task} taskList={props.tasks} setTasks={props.setTasks}/>
                 )
             })}
             

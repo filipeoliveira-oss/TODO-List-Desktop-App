@@ -54,3 +54,21 @@
     width: 120%;
     cursor: pointer;
 }
+
+.TaskPriority > .todo > .check{
+    stroke: white;
+    opacity: 0.5;
+}
+
+.TaskPriority > .todo > .circleCheck{
+    stroke: white;
+    opacity: 0.5;
+}
+
+.TaskPriority > .done > .check{
+    stroke: #00ff00;
+}
+
+.TaskPriority > .done > .circleCheck{
+    stroke: white;
+}
