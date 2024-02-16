@@ -1,0 +1,39 @@
+.HeaderContainer{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid white; */
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #a8acbb;
+    background-color: #41434a;
+}
+
+.HeaderContainer > div > button{
+    cursor: pointer;
+}
+
+.HeaderFileActions, .HeaderConfigsActions{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 8.5rem;
+}
+
+.HeaderConfigsActions{
+    display: flex;
+    justify-content: end;
+}
+
+.HeaderFilters{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.HeaderFilters > button{
+    background-color:  #1a1b1f;
+    border-radius: 50px;
+}

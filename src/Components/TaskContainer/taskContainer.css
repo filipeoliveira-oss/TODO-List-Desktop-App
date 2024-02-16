@@ -1,0 +1,56 @@
+.TaskContainer{
+    background-color: #41434a;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+
+    --borderWidth: 5px;
+}
+
+.TaskPriority{
+    width: 5rem;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: var(--borderWidth) solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.TaskPriority > *{
+    transform: translateX(var(--borderWidth));
+}
+
+
+.TaskDetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-left: 1rem;
+}
+.taskDetailsDesc{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.TaskActions{
+    height: 100%;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    color: #a8acbb;
+}
+
+.TaskAction{
+    height: 100%;
+    width: 120%;
+    cursor: pointer;
+}
